@@ -72,7 +72,7 @@ public class Repository {
             this.repo = new ArrayList<Image>();
             System.out.println("Successfully deleted all images in repository.");
         } else {
-            System.out.println("Failed to validate credentials.")
+            System.out.println("Failed to validate credentials.");
         }
     }
 }
@@ -80,7 +80,7 @@ public class Repository {
 public class Main {
     public static void main(String args[]) {
         Repository rep = new Repository("Shopify Repository");
-        while true {
+        while (true) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Please select the following options for the Shopify Repository:");
             System.out.println("[1] List the images in the repository");
@@ -100,13 +100,13 @@ public class Main {
                 String user = scanner.nextLine();
                 System.out.println("Enter the image path:");
                 String path = scanner.nextLine();
-                repository.Add(user, path)
+                rep.Add(user, path);
             } else if (value == 3){
                 System.out.println("Enter your username:");
                 String user = scanner.nextLine();
                 System.out.println("Enter the image path or 'all' to remove all images:");
                 String path = scanner.nextLine();
-                repository.Delete(user, path)
+                rep.Delete(user, path)
             } else if (value == 4){
                 System.out.println("Enter your username:");
                 String user = scanner.nextLine();
