@@ -14,8 +14,12 @@ public class Main {
             System.out.println("[5] Exit the program");
 
             String input = scanner.nextLine();
-
-            int value = Integer.parseInt(input);
+            int value = 0;
+            try{
+                value = Integer.parseInt(input);
+            } catch(final NumberFormatException e){
+            }
+            
 
             if (value == 1){
                 rep.List();

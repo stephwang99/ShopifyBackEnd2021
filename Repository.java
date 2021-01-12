@@ -27,7 +27,7 @@ public class Repository {
         if (file.isDirectory()){
             String[] files = file.list();
             for (String filename: files){
-                Image img = new Image(user, filename);
+                Image img = new Image(user, path+"/"+filename);
                 this.repo.add(img);
             }
         } else if (file.isFile()){
@@ -36,11 +36,15 @@ public class Repository {
         }
     }
     public void Delete(String user, String path){
+
         for (int i = 0; i < this.repo.size(); i++){
-            if ((user.equals(this.repo.get(i).GetUser()) && path.equals(this.repo.get(i).GetPath())) || (user.equals(this.repo.get(i).GetUser()) && path.equals("all"))){
+            Image img = this.repo.get(i);
+            if (user.equals(img.GetUser()) && (path.equals(img.GetPath()) || path.equals("all"))){
                 this.repo.remove(i);
+                --i;
             }
         }
+
         System.out.println("Deleted all found images.");
     }
     public void DeleteAll(String user, String password){
