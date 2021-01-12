@@ -1,5 +1,5 @@
 # Shopify Back-end developer Summer 2021
-An image repository using object-oriented design with simple commands such as list, add and delete
+An image repository built from scratch using object-oriented design. It allows simple commands such as list, add and delete
 
 **Image Class**
 - String user
