@@ -33,7 +33,7 @@ Option 3: Delete\
 Delete also accepts the user and path of the image needed to be deleted. It checks that the image was added by the same user before deleting it. If the user provides "all" as the pathname, then all images added by the user will be delete.
 
 Option 4: Delete all\
-Delete all will empty the entire repository. Since there is a possibility of many users adding various images, the program will ensure only the root user can delete all images. The program will also prompt for a password. The default password is encoded in base64, and will be compared with the user's input.
+Delete all will empty the entire repository. Since there is a possibility of many users adding various images, the program will ensure only the root user can delete all images. The program will also prompt for a password. The default password (_rootpasssword_) is encoded in base64, and will be compared with the user's input.
 
 Option 5: Exit\
 This will just terminate the program.
