@@ -17,7 +17,7 @@ Repository Class
 - void Delete()
 - void DeleteAll()
 
-Run:
+Run: 
 To run the program, you can simply run it on the terminal or IDE of your choice and the program will start. To run on the terminal, simply go to the directory where exists this file, and compile the code `javac shopify_challenge.java` then run `java shopify_challenge`.
 
 Usage:
