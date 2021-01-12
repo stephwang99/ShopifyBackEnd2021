@@ -18,7 +18,7 @@ An image repository built from scratch using object-oriented design. It allows s
 - void DeleteAll()
 
 Run:\
-To run the program, you can simply run it on the terminal or IDE of your choice and the program will start. To run on the terminal, simply go to the directory where exists this file, and compile the code `javac Main.java` then run `java Main`.
+To run the program, you can simply run it on the terminal or IDE of your choice and the program will start. To run on the terminal, simply go to the directory where exists the files, and compile the code like this `javac Main.java` then run `java Main`.
 
 Usage:\
 The program will prompt users for options by entering the number corresponding to the option. This runs infinitely until the user chooses the exit. If the user provides an input that is not part of the option, the program will reask the user again for a valid option.
